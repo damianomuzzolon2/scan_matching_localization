@@ -23,13 +23,13 @@ if [ ! -d "$LIBCARLA_INSTALL_DIRECTORY" ]; then
   cd ..
   mkdir lib
   cd lib
-  ln -s $CARLA_SOURCE_DIRECTORY/Build/libcarla-client-build.release/LibCarla/cmake/client/*.a .
-  ln -s $CARLA_SOURCE_DIRECTORY/Build/boost-*-install/lib/*.a .
-  ln -s $CARLA_SOURCE_DIRECTORY/Build/boost-*-install/lib/*.so* .
-  ln -s $CARLA_SOURCE_DIRECTORY/Build/libpng-*-install/lib/*.a .
-  ln -s $CARLA_SOURCE_DIRECTORY/Build/libpng-*-install/lib/*.so* .
-  ln -s $CARLA_SOURCE_DIRECTORY/Build/recast-*-install/lib/*.a .
-  ln -s $CARLA_SOURCE_DIRECTORY/Build/rpclib-*-libstdcxx-install/lib/*.a .
+  ln -s -f $CARLA_SOURCE_DIRECTORY/Build/libcarla-client-build.release/LibCarla/cmake/client/*.a .
+  ln -s -f $CARLA_SOURCE_DIRECTORY/Build/boost-*-install/lib/*.a .
+  ln -s -f $CARLA_SOURCE_DIRECTORY/Build/boost-*-install/lib/*.so* .
+  ln -s -f $CARLA_SOURCE_DIRECTORY/Build/libpng-*-install/lib/*.a .
+  ln -s -f $CARLA_SOURCE_DIRECTORY/Build/libpng-*-install/lib/*.so* .
+  ln -s -f $CARLA_SOURCE_DIRECTORY/Build/recast-*-install/lib/*.a .
+  ln -s -f $CARLA_SOURCE_DIRECTORY/Build/rpclib-*-libstdcxx-install/lib/*.a .
   cd ..
   cd ..
 fi
