@@ -154,7 +154,7 @@ int main() {
         if ((detection.x * detection.x + detection.y * detection.y +
              detection.z * detection.z) > 8.0) {
           pclCloud.points.push_back(
-              PointT(detection.x, detection.y, detection.z));
+              PointT(-detection.y, detection.x, detection.z));
         }
       }
       if (pclCloud.points.size() > 5000) { // CANDO: Can modify this value to
